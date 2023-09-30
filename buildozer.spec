@@ -94,7 +94,7 @@ android.skip_update = false
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-#android.permissions = android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18),CAMERA
+android.permissions = android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18),CAMERA
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
@@ -230,9 +230,9 @@ android.skip_update = false
 
 # (list) Android additional libraries to copy into libs/armeabi
 #android.add_libs_armeabi = libs/android/*.so
-android.add_libs_armeabi_v7a = libs/android-v7/*.so
-android.add_libs_arm64_v8a = libs/android-v8/*.so
-android.add_libs_x86 = libs/android-x86/*.so
+android.add_libs_armeabi_v7a = %(source_dir)s/armeabi_v7a/libopencv_java4.so
+android.add_libs_arm64_v8a = %(source_dir)s/arm64-v8a/libopencv_java4.so
+android.add_libs_x86 = %(source_dir)s/x86/libopencv_java4.so
 #android.add_libs_mips = libs/android-mips/*.so
 
 # (bool) Indicate whether the screen should stay on
