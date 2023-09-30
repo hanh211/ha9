@@ -380,7 +380,7 @@ ios.codesign.allowed = false
 
 [buildozer]
 
-# (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
+# (int) Log level (0 = error only, 1 = info, 3 = debug (with command output))
 log_level = 2
 
 # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
