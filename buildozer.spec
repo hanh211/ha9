@@ -94,7 +94,7 @@ android.skip_update = false
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-#android.permissions = INTERNET
+#android.permissions = android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18),CAMERA
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
