@@ -230,9 +230,9 @@ android.permissions = android.permissions = android.permission.INTERNET, (name=a
 
 # (list) Android additional libraries to copy into libs/armeabi
 #android.add_libs_armeabi = libs/android/*.so
-android.add_libs_armeabi_v7a = %(source_dir)s/armeabi_v7a/libopencv_java4.so
-android.add_libs_arm64_v8a = %(source_dir)s/arm64-v8a/libopencv_java4.so
-android.add_libs_x86 = %(source_dir)s/x86/libopencv_java4.so
+android.add_libs_armeabi_v7a = %(source_dir)s/https://github.com/hanh211/ha9/blob/main/armeabi_v7a/libopencv_java4.so
+android.add_libs_arm64_v8a = %(source_dir)s/https://github.com/hanh211/ha9/blob/main/arm64-v8a/libopencv_java4.so
+android.add_libs_x86 = %(source_dir)s/https://github.com/hanh211/ha9/blob/main/x86/libopencv_java4.so
 #android.add_libs_mips = libs/android-mips/*.so
 
 # (bool) Indicate whether the screen should stay on
