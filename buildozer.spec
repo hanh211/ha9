@@ -230,9 +230,9 @@ android.skip_update = false
 
 # (list) Android additional libraries to copy into libs/armeabi
 #android.add_libs_armeabi = libs/android/*.so
-#android.add_libs_armeabi_v7a = libs/android-v7/*.so
-#android.add_libs_arm64_v8a = libs/android-v8/*.so
-#android.add_libs_x86 = libs/android-x86/*.so
+android.add_libs_armeabi_v7a = libs/android-v7/*.so
+android.add_libs_arm64_v8a = libs/android-v8/*.so
+android.add_libs_x86 = libs/android-x86/*.so
 #android.add_libs_mips = libs/android-mips/*.so
 
 # (bool) Indicate whether the screen should stay on
@@ -380,7 +380,7 @@ ios.codesign.allowed = false
 
 [buildozer]
 
-# (int) Log level (0 = error only, 1 = info, 3 = debug (with command output))
+# (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
 log_level = 2
 
 # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
