@@ -8,7 +8,7 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.include_patterns = .names, .pb, .pbtxt
 version = 0.1
 #version.regex =v7.1
-requirements = python3,kivy,kivymd,opencv,android==10
+requirements = python3,kivy,kivymd,opencv,libtool
 orientation = portrait
 osx.python_version = 3
 osx.kivy_version = 1.9.1
