@@ -1,21 +1,29 @@
 [app]
-title = My Application
-package.name = myapp
+title = hanh
+package.name = hanh
 package.domain = org.test
+#package.domain = org.kivy.hanh21duc@gmail.com
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas,xml
+source.include_exts = py,png,jpg,kv,atlas
+#source.include_patterns = .names, .pb, .pbtxt
 version = 0.1
-requirements = python3,kivy,kivymd,opencv,telepot
+#version.regex =v7.1
+requirements = python3,kivy,kivymd,opencv,android==10
 orientation = portrait
 osx.python_version = 3
 osx.kivy_version = 1.9.1
-
-
+#services = camera:ngduchanh1.ddns.net:554,telepot:"6275415240:AAF3yDdT45-VIn8GdBrQUHH0XmtMXo0MC28",telepot:5877612764
+#services = NAME:ngduchanh1.ddns.net:554
 # Android specific
 fullscreen = 0
-# android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
-android.permissions = INTERNET,ACCESS_FINE_LOCATION,WRITE_EXTERNAL_STORAGE,CAMERA
+#android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18),CAMERA
+android.permissions = INTERNET,CAMERA,READ_EXTERNAL_STORAGE
 android.allow_backup = True
+#services =NAME:ACTION_IMAGE_CAPTURE,NAME2:REQUESt_CODE_CAMERA
+android.archs = arm64-v8a, armeabi-v7a
+#android.whitelist_src ="rtsp://admin:admin1234@ngduchanh1.ddns.net:554/cam/realmonitor?channel=1&subtype=0"
+#android.blacklist_src =
+#android.provider="rtsp://admin:admin1234@ngduchanh1.ddns.net:554/cam/realmonitor?channel=1&subtype=0"
 
 [buildozer]
 
