@@ -1,20 +1,22 @@
-var express=require("express")
-var app=express();
-app.use(express.static("public"));
+const server=require('express');
+const bodyParser=require('body-parser');
+const {spawn}=require('child_process');
+const app=server();
+const port=process.env.PORT || 3000;
 app.set("view engine","ejs");
-app.set("views","./views");
+app.engine('html',require('ejs').renderFile);
 
-var server=require("http").Server(app);
-var io=require("socket.io")(server);
-server.listen(process.env.PORT || 3000);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
 
-io.on("connection",function(socket){
-  console.log("co nguoi ket noi");
-  socket.on("disconnect",function(){
-    console.log("ngat ket noi");
-  });
+app.get('/',(req,res)=>{
+  res.render('index.html')
+});
+app.get('/app',(req,res)=>{
+  res.json("hello nhe")
 });
 
-app.get("/",function(req,res){
-  res.render("a")
+
+app.listen(port,()=>{
+  console.log('listen 3000')
 });
